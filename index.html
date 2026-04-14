@@ -3,10 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Abderrahmane Benfanich | PhD Candidate</title>
+    <style>
+        :root { --primary: #800000; --text: #333; --bg: #f4f4f4; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
+        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
+        h2 { border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 40px; color: var(--primary); }
+        .contact-info { margin-top: 10px; font-size: 0.9em; color: #666; }
+        .project, .pub { margin-bottom: 20px; }
+        .date { float: right; color: #888; font-style: italic; }
+        .tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; }
+        ul { padding-left: 20px; }
+        @media (max-width: 600px) { .container { margin: 10px; padding: 20px; } .date { float: none; display: block; margin-bottom: 5px; } }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This site is hosted on GitHub Pages!</p>
+
+<div class="container">
+    <header>
+        <h1>Abderrahmane Benfanich</h1>
+        <div class="contact-info">
+            Ottawa, ON | abenf099@uottawa.ca | PhD Candidate at University of Ottawa
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Research Focus</h2>
+        <p>
+            I am a PhD candidate specializing in the <strong>theoretical and numerical analysis of infiltration models</strong>. 
+            My work primarily involves the <strong>Richards equations</strong> and higher-order extensions using <strong>Finite Element Methods</strong> to predict water movement in porous media.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="project">
+            <span class="date">2024 - Present</span>
+            <strong>Ph.D. in Mathematics and Statistics</strong><br>
+            University of Ottawa
+        </div>
+        <div class="project">
+            <span class="date">2023 - 2024</span>
+            <strong>Master's in Mathematics and Statistics</strong> (Fast-tracked to PhD)<br>
+            University of Ottawa
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="pub">
+            <strong>Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</strong><br>
+            <em>Journal of Differential Equations</em> (Submitted 2026). arXiv:2602.19037
+        </div>
+        <div class="pub">
+            <strong>A finite element method using a bounded auxiliary variable for solving the Richards equation</strong><br>
+            <em>Journal of Computational Physics</em> (Submitted 2025)
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills & Interests</h2>
+        <p>
+            <strong>Languages:</strong> <span class="tag">Python</span> <span class="tag">C++</span> <span class="tag">FreeFem++</span> <span class="tag">LaTeX</span>
+        </p>
+        <p>
+            <strong>Athletics:</strong> Outside of mathematics, I am a competitive <strong>Track and Field</strong> athlete specializing in <strong>Discus and Shot Put</strong>.
+        </p>
+    </section>
+
+    <footer style="margin-top: 50px; font-size: 0.8em; color: #999; text-align: center;">
+        &copy; 2026 Abderrahmane Benfanich. Built with GitHub Pages.
+    </footer>
+</div>
+
 </body>
 </html>
