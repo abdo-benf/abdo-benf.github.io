@@ -9,10 +9,12 @@
     <meta property="og:title" content="Abderrahmane Benfanich | Research & CV">
     <meta property="og:description" content="Publications, education, academic experience, and conferences in mathematical modeling and numerical analysis.">
     <meta property="og:url" content="https://abderrahmane-benfanich.github.io/research.html">
-    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/favicon.svg">
+    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
+    <meta property="og:image:alt" content="Abderrahmane Benfanich research and CV preview">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Abderrahmane Benfanich | Research & CV">
     <meta name="twitter:description" content="Publications, education, academic experience, and conferences in mathematical modeling and numerical analysis.">
+    <meta name="twitter:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
     <link rel="canonical" href="https://abderrahmane-benfanich.github.io/research.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
     <title>Abderrahmane Benfanich | Research & CV</title>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <nav class="navbar">
         <a href="index.html">Home</a>
@@ -30,9 +33,9 @@
     </nav>
 
     <div class="content-wrapper">
-        <main class="card">
+        <main class="card" id="main-content">
             <header>
-                <h1 style="margin-top: 0; color: var(--primary-dark);">Research & CV</h1>
+                <h1 class="page-title">Research & CV</h1>
                 <p class="muted">Numerical analysis, finite element methods, and mathematical modeling of flow and transport in porous media.</p>
                 <div class="inline-actions" id="cv-download">
                     <a class="button button-primary" href="Abderrahmane_Benfanich_CV.pdf" download>Download CV (PDF)</a>
@@ -42,10 +45,10 @@
                 </div>
             </header>
             
-            <h2 class="section-title" style="margin-top: 28px;">Education</h2>
+            <h2 class="section-title section-title-top">Education</h2>
             <div class="item">
                 <div class="meta-row">
-                    <h3 style="margin: 0; font-size: 1.1rem;">Ph.D. in Mathematics and Statistics</h3>
+                    <h3 class="item-title">Ph.D. in Mathematics and Statistics</h3>
                     <span class="meta-date">09/2024 - Present</span>
                 </div>
                 <div class="item-subtitle">University of Ottawa, ON</div>
@@ -53,7 +56,7 @@
             </div>
             <div class="item">
                 <div class="meta-row">
-                    <h3 style="margin: 0; font-size: 1.1rem;">Master's in Mathematics and Statistics</h3>
+                    <h3 class="item-title">Master's in Mathematics and Statistics</h3>
                     <span class="meta-date">09/2023 - 09/2024</span>
                 </div>
                 <div class="item-subtitle">University of Ottawa, ON</div>
@@ -61,7 +64,7 @@
             </div>
             <div class="item">
                 <div class="meta-row">
-                    <h3 style="margin: 0; font-size: 1.1rem;">Bachelor's in Mathematics and Applications</h3>
+                    <h3 class="item-title">Bachelor's in Mathematics and Applications</h3>
                     <span class="meta-date">09/2020 - 06/2023</span>
                 </div>
                 <div class="item-subtitle">Cadi Ayyad University, Marrakech, Morocco</div>
@@ -71,34 +74,41 @@
             <div class="publication-list">
                 <article class="publication-card">
                     <div class="meta-row">
-                        <h3 style="margin: 0; font-size: 1.06rem;">Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</h3>
+                        <h3 class="publication-title">Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</h3>
                         <span class="meta-date">Submitted 02/2026</span>
                     </div>
                     <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. · Journal of Differential Equations</div>
                     <p>One-line summary: establishes well-posedness and stability results for a doubly degenerate parabolic model directly motivated by Richards-type infiltration dynamics.</p>
-                    <div class="publication-links">
-                        <a href="https://arxiv.org/abs/2602.19037" target="_blank" rel="noopener noreferrer">arXiv</a>
-                        <a href="https://www.sciencedirect.com/journal/journal-of-differential-equations" target="_blank" rel="noopener noreferrer">Journal Page</a>
+                    <div class="publication-actions">
+                        <a class="button button-small" href="https://arxiv.org/abs/2602.19037" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="button button-small" href="https://arxiv.org/pdf/2602.19037" target="_blank" rel="noopener noreferrer">Preprint PDF</a>
+                        <button class="button button-small bibtex-copy" type="button" data-bibtex='@article{benfanich2026degenerate, title={Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation}, author={Benfanich, Abderrahmane and Bourgault, Yvan and Beljadid, A.}, journal={Journal of Differential Equations}, year={2026}, note={Submitted}, eprint={2602.19037}, archivePrefix={arXiv}}'>Copy BibTeX</button>
+                        <a class="button button-small" href="https://www.sciencedirect.com/journal/journal-of-differential-equations" target="_blank" rel="noopener noreferrer">Journal Page</a>
+                        <span class="doi-pending">DOI pending</span>
                     </div>
                 </article>
                 <article class="publication-card">
                     <div class="meta-row">
-                        <h3 style="margin: 0; font-size: 1.06rem;">A finite element method using a bounded auxiliary variable for solving the Richards equation</h3>
+                        <h3 class="publication-title">A finite element method using a bounded auxiliary variable for solving the Richards equation</h3>
                         <span class="meta-date">Submitted 09/2025</span>
                     </div>
                     <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. · Journal of Computational Physics</div>
                     <p>One-line summary: introduces an FEM formulation with an auxiliary bounded variable to improve numerical robustness in strongly nonlinear infiltration regimes.</p>
-                    <div class="publication-links">
-                        <a href="https://arxiv.org/abs/2510.13012" target="_blank" rel="noopener noreferrer">arXiv</a>
-                        <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics" target="_blank" rel="noopener noreferrer">Journal Page</a>
+                    <div class="publication-actions">
+                        <a class="button button-small" href="https://arxiv.org/abs/2510.13012" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="button button-small" href="https://arxiv.org/pdf/2510.13012" target="_blank" rel="noopener noreferrer">Preprint PDF</a>
+                        <button class="button button-small bibtex-copy" type="button" data-bibtex='@article{benfanich2025bounded, title={A finite element method using a bounded auxiliary variable for solving the Richards equation}, author={Benfanich, Abderrahmane and Bourgault, Yvan and Beljadid, A.}, journal={Journal of Computational Physics}, year={2025}, note={Submitted}, eprint={2510.13012}, archivePrefix={arXiv}}'>Copy BibTeX</button>
+                        <a class="button button-small" href="https://www.sciencedirect.com/journal/journal-of-computational-physics" target="_blank" rel="noopener noreferrer">Journal Page</a>
+                        <span class="doi-pending">DOI pending</span>
                     </div>
                 </article>
             </div>
+            <p class="copy-feedback" id="bibtex-feedback" aria-live="polite"></p>
 
             <h2 class="section-title">Academic Experience</h2>
             <div class="item">
                 <div class="meta-row">
-                    <h3 style="margin: 0; font-size: 1.1rem;">Research & Teaching Assistant</h3>
+                    <h3 class="item-title">Research & Teaching Assistant</h3>
                     <span class="meta-date">06/2023 - Present</span>
                 </div>
                 <div class="item-subtitle">University of Ottawa, ON</div>
@@ -171,6 +181,37 @@
                 }
             ]
         }
+        </script>
+
+        <script>
+        (function () {
+            var buttons = document.querySelectorAll('.bibtex-copy');
+            var feedback = document.getElementById('bibtex-feedback');
+
+            function showFeedback(message) {
+                if (feedback) {
+                    feedback.textContent = message;
+                }
+            }
+
+            buttons.forEach(function (button) {
+                button.addEventListener('click', async function () {
+                    var bibtex = button.getAttribute('data-bibtex') || '';
+
+                    if (!bibtex) {
+                        showFeedback('No BibTeX found for this publication.');
+                        return;
+                    }
+
+                    try {
+                        await navigator.clipboard.writeText(bibtex);
+                        showFeedback('BibTeX copied to clipboard.');
+                    } catch (error) {
+                        showFeedback('Could not access clipboard. Please copy manually.');
+                    }
+                });
+            });
+        })();
         </script>
 
 </body>

@@ -9,10 +9,12 @@
     <meta property="og:title" content="Abderrahmane Benfanich | Animations">
     <meta property="og:description" content="Watch math animations and visual explainers covering PDEs, FEM, and fractal geometry.">
     <meta property="og:url" content="https://abderrahmane-benfanich.github.io/animations.html">
-    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/favicon.svg">
+    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
+    <meta property="og:image:alt" content="Abderrahmane Benfanich mathematical animations preview">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Abderrahmane Benfanich | Animations">
     <meta name="twitter:description" content="Watch math animations and visual explainers covering PDEs, FEM, and fractal geometry.">
+    <meta name="twitter:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
     <link rel="canonical" href="https://abderrahmane-benfanich.github.io/animations.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
     <title>Abderrahmane Benfanich | Animations</title>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <nav class="navbar">
         <a href="index.html">Home</a>
@@ -30,10 +33,10 @@
     </nav>
 
     <div class="content-wrapper">
-        <main class="card">
+        <main class="card" id="main-content">
             <h1 class="section-title">Visualizing Mathematics</h1>
-            <p class="muted" style="text-align: left;">Through my content channel, <strong>"Abdo does maths,"</strong> I create animations that turn abstract mathematical concepts into visual narratives.</p>
-            <div class="inline-actions" style="justify-content: flex-start; margin-top: 8px;">
+            <p class="muted text-left">Through my content channel, <strong>"Abdo does maths,"</strong> I create animations that turn abstract mathematical concepts into visual narratives.</p>
+            <div class="inline-actions inline-actions-start">
                 <a class="button button-primary" href="https://www.tiktok.com/@abdo_does_maths" target="_blank" rel="noopener noreferrer">Follow @abdo_does_maths</a>
             </div>
             
@@ -46,14 +49,16 @@
                 <h3>Heat Equation in a Sinusoidal Channel (2D FEM)</h3>
                 <p><strong>What you'll learn:</strong> how boundary heating drives diffusion and creates evolving temperature waves in a finite element simulation.</p>
                     <div class="tiktok-frame">
-                        <iframe
-                            src="https://www.tiktok.com/player/v1/7622740439497493781"
-                            title="Heat Equation (2D FEM)"
-                            loading="lazy"
-                            allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-                            allowfullscreen>
-                        </iframe>
+                        <button
+                            class="embed-loader"
+                            type="button"
+                            data-embed-src="https://www.tiktok.com/player/v1/7622740439497493781"
+                            data-embed-title="Heat Equation (2D FEM)">
+                            <span class="embed-loader__label">Load video</span>
+                            <span class="embed-loader__hint">TikTok embed loads on click</span>
+                        </button>
                     </div>
+                    <p class="video-fallback"><a href="https://www.tiktok.com/@abdo_does_maths/video/7622740439497493781" target="_blank" rel="noopener noreferrer">Open this video on TikTok</a></p>
                 </div>
                 <div class="video-box">
                     <div class="video-meta">
@@ -63,14 +68,16 @@
                     <h3>Mandelbrot Set Zoom and Self-Similarity</h3>
                     <p><strong>What you'll learn:</strong> why tiny regions in the Mandelbrot set reproduce global structure through recursive complex dynamics.</p>
                     <div class="tiktok-frame">
-                        <iframe
-                            src="https://www.tiktok.com/player/v1/7607309494258896148"
-                            title="Mandelbrot set visualization"
-                            loading="lazy"
-                            allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-                            allowfullscreen>
-                        </iframe>
+                        <button
+                            class="embed-loader"
+                            type="button"
+                            data-embed-src="https://www.tiktok.com/player/v1/7607309494258896148"
+                            data-embed-title="Mandelbrot set visualization">
+                            <span class="embed-loader__label">Load video</span>
+                            <span class="embed-loader__hint">TikTok embed loads on click</span>
+                        </button>
                     </div>
+                    <p class="video-fallback"><a href="https://www.tiktok.com/@abdo_does_maths/video/7607309494258896148" target="_blank" rel="noopener noreferrer">Open this video on TikTok</a></p>
                 </div>
             </div>
         </main>
@@ -108,6 +115,34 @@
                 }
             ]
         }
+        </script>
+
+        <script>
+        (function () {
+            var loaders = document.querySelectorAll('.embed-loader');
+
+            loaders.forEach(function (loader) {
+                loader.addEventListener('click', function () {
+                    var frame = loader.closest('.tiktok-frame');
+                    var src = loader.getAttribute('data-embed-src');
+                    var title = loader.getAttribute('data-embed-title') || 'TikTok video';
+
+                    if (!frame || !src) {
+                        return;
+                    }
+
+                    var iframe = document.createElement('iframe');
+                    iframe.src = src;
+                    iframe.title = title;
+                    iframe.loading = 'lazy';
+                    iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+                    iframe.setAttribute('allowfullscreen', '');
+
+                    frame.innerHTML = '';
+                    frame.appendChild(iframe);
+                });
+            });
+        })();
         </script>
 
 </body>

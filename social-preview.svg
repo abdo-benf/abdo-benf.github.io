@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Abderrahmane Benfanich - PhD Candidate in Mathematics</title>
+  <desc id="desc">Research portfolio on porous media flow, Richards equation, finite element methods, and mathematical animations.</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#8f001a" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.2" r="0.9">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <circle cx="1030" cy="80" r="210" fill="#ffffff" opacity="0.08" />
+  <circle cx="1080" cy="540" r="280" fill="#ffffff" opacity="0.06" />
+  <path d="M0 500 C180 420 340 560 520 500 C700 440 860 560 1200 470 L1200 630 L0 630 Z" fill="#ffffff" opacity="0.08" />
+
+  <rect x="74" y="80" width="1052" height="470" rx="24" fill="#ffffff" opacity="0.08" />
+  <rect x="74" y="80" width="1052" height="470" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" />
+
+  <text x="120" y="206" font-family="Merriweather, Georgia, serif" font-size="66" font-weight="700" fill="#ffffff">
+    Abderrahmane Benfanich
+  </text>
+  <text x="120" y="266" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" fill="#fbecef">
+    PhD Candidate in Mathematics
+  </text>
+
+  <line x1="120" y1="302" x2="760" y2="302" stroke="#fbecef" stroke-opacity="0.75" stroke-width="3" />
+
+  <text x="120" y="365" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="33" font-weight="600" fill="#ffffff">
+    Richards Equation | Porous Media Flow | FEM
+  </text>
+  <text x="120" y="420" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="30" font-weight="500" fill="#f3f4f8">
+    Research, Publications, and Mathematical Animations
+  </text>
+
+  <text x="120" y="494" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#fbecef">
+    abderrahmane-benfanich.github.io
+  </text>
+</svg>

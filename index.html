@@ -9,10 +9,12 @@
     <meta property="og:title" content="Abderrahmane Benfanich | PhD Candidate">
     <meta property="og:description" content="Research portfolio and mathematical visualizations by Abderrahmane Benfanich.">
     <meta property="og:url" content="https://abderrahmane-benfanich.github.io/index.html">
-    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/favicon.svg">
+    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
+    <meta property="og:image:alt" content="Abderrahmane Benfanich research portfolio preview">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Abderrahmane Benfanich | PhD Candidate">
     <meta name="twitter:description" content="Research portfolio and mathematical visualizations by Abderrahmane Benfanich.">
+    <meta name="twitter:image" content="https://abderrahmane-benfanich.github.io/social-preview.svg">
     <link rel="canonical" href="https://abderrahmane-benfanich.github.io/index.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
     <title>Abderrahmane Benfanich | PhD Candidate</title>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <nav class="navbar">
         <a href="index.html" class="active">Home</a>
@@ -31,8 +34,8 @@
 
     <div class="content-wrapper layout-home">
         <aside class="card">
-            <h1 style="margin: 0; color: var(--primary-dark);">Abderrahmane Benfanich</h1>
-            <p class="muted" style="margin-top: 8px;">PhD Candidate in Mathematics, University of Ottawa</p>
+            <h1 class="profile-name">Abderrahmane Benfanich</h1>
+            <p class="muted profile-role">PhD Candidate in Mathematics, University of Ottawa</p>
             <ul class="contact-list">
                 <li>📍 Ottawa, ON, Canada</li>
                 <li>📞 (873) 353-9127</li>
@@ -42,9 +45,9 @@
             <h2 class="block-title">Profiles & CV</h2>
             <div class="inline-actions">
                 <a class="button" href="research.html#cv-download">Download CV</a>
-                <a class="button" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a class="button" href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID</a>
-                <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="button" href="https://scholar.google.com/citations?user=azba0i0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a class="button" href="https://orcid.org/0009-0009-8872-1913" target="_blank" rel="noopener noreferrer">ORCID</a>
+                <a class="button" href="https://www.linkedin.com/in/abderrahmane-benfanich-63b996229/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
 
             <h2 class="block-title">Technical Skills</h2>
@@ -58,7 +61,7 @@
                 </div>
         </aside>
 
-        <main>
+        <main id="main-content">
             <section class="card hero">
                 <h2 class="hero-title">Modeling Flow in Porous Media, One Equation at a Time</h2>
                 <p class="hero-subtitle">I work on the mathematical analysis and finite element approximation of the Richards equation and higher-order extensions, with applications to infiltration and contaminant transport.</p>
@@ -68,7 +71,31 @@
                 </div>
             </section>
 
-            <section class="card" style="margin-top: 20px;">
+            <section class="card card-spaced">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <span class="tag">Paper · Analysis</span>
+                        <h3>Doubly Degenerate Parabolic Equation</h3>
+                        <p>Well-posedness and stability results motivated by Richards-type infiltration dynamics.</p>
+                        <a href="https://arxiv.org/abs/2602.19037" target="_blank" rel="noopener noreferrer">Read preprint</a>
+                    </article>
+                    <article class="work-card">
+                        <span class="tag">Paper · FEM</span>
+                        <h3>Bounded Auxiliary Variable FEM</h3>
+                        <p>Finite element formulation that improves robustness for highly nonlinear infiltration regimes.</p>
+                        <a href="https://arxiv.org/abs/2510.13012" target="_blank" rel="noopener noreferrer">Read preprint</a>
+                    </article>
+                    <article class="work-card">
+                        <span class="tag">Video · PDE</span>
+                        <h3>Heat Equation Animation</h3>
+                        <p>Visual walkthrough of diffusion in a sinusoidal channel using a finite element simulation.</p>
+                        <a href="animations.html">Watch on Animations page</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card card-spaced">
             <h2 class="section-title">Welcome</h2>
             <p>I am a PhD candidate in Mathematics and Statistics at the University of Ottawa. My academic focus is on the theoretical and numerical analysis of infiltration models.</p>
             <p>Specifically, I develop advanced numerical methods for the Richards equation and its higher-order extensions. This work models water infiltration in porous media to better predict pollutant movement and prevent groundwater contamination, incorporating both diffusion and dispersion effects.</p>
